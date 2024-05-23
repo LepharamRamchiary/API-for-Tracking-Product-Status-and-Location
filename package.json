@@ -1,0 +1,29 @@
+{
+  "name": "Tracking_API",
+  "version": "1.0.0",
+  "description": "This is realtime app",
+  "main": "index.js",
+  "author": "Lepharam",
+  "scripts": {
+    "serve": "node server.js",
+    "dev": "nodemon server.js",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "laravel-mix": "5.0.4",
+    "nodemon": "^3.1.0",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.77.2",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.7.16"
+  }
+}
